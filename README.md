@@ -9,4 +9,26 @@ MyStack(int c) //constructor
  cap = c;
  arr = new int[cap];
  }
+void push(int x)
+{
+ top++;
+ arr[top]=x;
+}
+int pop()
+{
+ int res = arr[top];
+ top--;
+ return res;
+}
+int size()
+{
+return top + 1;
+}
+boolean isEmpty()
+{
+return(top==-1)
+}
+}
+
+
  
